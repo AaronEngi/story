@@ -6,6 +6,7 @@ public class Contact {
   private String lastName;
   private String phoneNumber;
   private String emailAddress;
+  public String story;
 
   public void setId(Long id) {
     this.id = id;
