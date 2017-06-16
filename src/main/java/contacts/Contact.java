@@ -6,7 +6,10 @@ public class Contact {
   private String lastName;
   private String phoneNumber;
   private String emailAddress;
-  public String story;
+
+
+
+  private String story;
 
   public void setId(Long id) {
     this.id = id;
@@ -46,5 +49,13 @@ public class Contact {
   
   public String getEmailAddress() {
     return emailAddress;
+  }
+
+  public void setStory(String story) {
+    this.story = story;
+  }
+
+  public String getStory() {
+    return story;
   }
 }

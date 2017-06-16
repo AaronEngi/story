@@ -30,7 +30,7 @@ public class ContactRepository {
             contact.setLastName(rs.getString(3));
             contact.setPhoneNumber(rs.getString(4));
             contact.setEmailAddress(rs.getString(5));
-            contact.story = rs.getString(6);
+            contact.setStory(rs.getString(6));
             return contact;
           }
         }
@@ -43,7 +43,7 @@ public class ContactRepository {
         "(firstName, lastName, phoneNumber, emailAddress, story) " +
         "values (?, ?, ?, ?, ?)",
         contact.getFirstName(), contact.getLastName(),
-        contact.getPhoneNumber(), contact.getEmailAddress(), contact.story);
+        contact.getPhoneNumber(), contact.getEmailAddress(), contact.getStory());
   }
   
 }
